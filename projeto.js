@@ -1,11 +1,18 @@
-class Usuario{
+class Entidade {
+    id;
+
+}
+
+class Usuario extends Entidade {
     nome;
     senha;
 
     constructor(
+        id,
         nome,
         senha
     ) {
+        super(id);
         this.nome = nome;
         this.senha = senha;
     }
@@ -15,26 +22,23 @@ class Usuario{
     }
 
     show() {
-        console.log(this.nome+' app '+this.senha)
+        console.log(this.nome + ' app ' + this.senha)
     }
 
 }
 
-class postagem extends Usuario{
+class Postagem {
     post;
     static comentarios = '';
-
+    idUsuario;
 
 
     constructor(
-        nome,
-        senha,
         post,
         comentarios = ''
     ) {
-        super(nome,senha);
         this.post = post;
-        postagem.comentarios += comentarios;
+        post.comentarios += comentarios;
     }
 
     // static soma_comentarios() {
@@ -42,14 +46,16 @@ class postagem extends Usuario{
     // }
 
     abre() {
-        console.log(this.post+' app '+postagem.comentarios)
+        console.log(this.post + ' app ' + Postagem.comentarios)
     }
 
 }
 
-class comentarios extends postagem{
+class Comentarios {
     // postagem;
     comentarios;
+    idPostagem;
+    id;
 
     constructor(
         nome,
@@ -57,32 +63,34 @@ class comentarios extends postagem{
         post,
         comentarios
     ) {
-        super(nome,senha,post);
+        
         // this.postagem = postagem;
         this.comentarios = comentarios;
     }
 
     exibir() {
-        console.log(this.post+' app '+this.comentarios)
+        console.log(this.post + ' app ' + this.comentarios)
     }
 
 }
 
-const pessoa = new Usuario('alexandre','1234')
+const pessoa = new Usuario(1,'alexandre', '1234')
 
 pessoa.show()
 
-const post_antes = new postagem(pessoa.nome,pessoa.senha,'Essa é minha postagem','')
+
+
+ const post_antes = new Postagem(pessoa.nome, pessoa.senha, 'Essa é minha postagem', '')
 
 post_antes.abre()
 
-post_antes.comentarios = 'comentario'
+// post_antes.comentarios = 'comentario'
 
-post_antes.abre()
+// post_antes.abre()
 
-const postic = new postagem(pessoa.nome,pessoa.senha,'Essa é minha postagem',' comentario')
+// const postic = new postagem(pessoa.nome, pessoa.senha, 'Essa é minha postagem', ' comentario')
 
-postic.abre()
+// postic.abre()
 
 // const coment = new comentarios(postic.nome,postic.senha,postic.post,'primeiro comentario')
 
