@@ -71,3 +71,5 @@ console.log(`${user1.user}: ${user1.friends}`)
 console.log(`${user2.user}: ${user2.friends}`)
 console.log(`${user3.user}: ${user3.friends}`)
 console.log(`${user4.user}: ${user4.friends}`)
+
+Module.exports = User
