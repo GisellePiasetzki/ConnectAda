@@ -53,6 +53,7 @@ user0.newFriendship(user2)
 user0.newFriendship(user3)
 user0.newFriendship(user4)
 user1.newFriendship(user0)
+// user0.newFriendship(user13)
 
 console.log(`${user0.user}: ${user0.friends}`)
 console.log(`${user1.user}: ${user1.friends}`)
@@ -72,4 +73,4 @@ console.log(`${user2.user}: ${user2.friends}`)
 console.log(`${user3.user}: ${user3.friends}`)
 console.log(`${user4.user}: ${user4.friends}`)
 
-Module.exports = User
+// Module.exports = User
