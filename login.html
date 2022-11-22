@@ -22,14 +22,18 @@
       <form>
         <h2>Entrar na Connect Ada</h2>
         <div class="container">
-          <input type="email" placeholder="E-mail ou nome de usuário">
+          <input type="text" placeholder="E-mail ou nome de usuário" id="login">
         </div>
         <div class="container">
-          <input type="password" placeholder="Senha">
+          <input type="password" placeholder="Senha" id="password">
         </div>
+        <button type="submit" onclick="logar()">Entrar</button>
+        <!-- mudar para event depois -->
+        <p>Não tem uma conta? <a href="#" target="_blank">Inscreva-se</a></p>
       </form>
     </main>
   
   </div>
+  <script src="./login.js" type="module"></script>
 </body>
 </html>
