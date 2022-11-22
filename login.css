@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./assets-front/background-ada-main.svg);
+  height: 100vh;
+  font-family: 'Exo', sans-serif;
+  
+  background-origin: content-box;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-color: #181C23;
+}
+
+header { 
+  color:  #A6F750;
+  margin: 85px auto;
+}
+
+main {
+  color: white;
+  
+}
+
+form {
+  width: 300px;
+  margin: 100px auto;
+  text-align: center;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  padding: 10px 85px 10px 40px;
+  
+  font-family: 'Exo', sans-serif;
+
+  background-color: #282C33;
+  border: none;
+  border-radius: 12px 12px 0px 0px;
+
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+form:nth-child(2) {
+  border-radius: 12px 12px 0px 0px;
+
+}
+
+form:last-child {
+  border-radius: 0px 0px 12px 12px;
+}
