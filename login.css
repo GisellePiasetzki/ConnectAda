@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(./assets-front/background-ada-main.svg);
+  background-image: url(./front-Gabi/assets-front/background-ada-main.svg);
   height: 100vh;
   font-family: 'Exo', sans-serif;
   
@@ -16,9 +16,13 @@ body {
   background-color: #181C23;
 }
 
+#page  {
+  text-align: center;
+}
+
 header { 
   color:  #A6F750;
-  margin: 85px auto;
+  margin-top: 85px;
 }
 
 main {
@@ -64,14 +68,14 @@ input::placeholder {
 }
 
 
-form:nth-child(2) {
+/* form:nth-child(2) {
   border-radius: 12px 12px 0px 0px;
 
 }
 
 form:last-child {
   border-radius: 0px 0px 12px 12px;
-}
+} */
 
 form button {
   background-color: #A6F750;
