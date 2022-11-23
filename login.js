@@ -5,7 +5,7 @@ function logar(){
 
   if(login == "admin" && password == "admin"){
     alert("sucesso");
-    location.href = "home.html";
+    location.href = "/front-Gabi/feed.html";
   } else{
     alert('Usuário ou senha incorretos')
   }
