@@ -6,6 +6,10 @@ class postagemmae {
         this.#postagem = postagem;
     }
 
+    showPost(){
+        console.log(this.#postagem)
+    }
+
     newComent(user,coment) {
             const add = {usuario:user,comentario:coment,likes:0}
             this.#allcoments.push(add)
@@ -37,7 +41,15 @@ class postagemmae {
             }
         });
         console.log(this.#allcoments)
+    }
 
+    desLike(user,coment) {
+        this.#allcoments.forEach((element) => {
+            if(element.usuario == user && element.comentario == coment){
+                element.likes = element.likes - 1
+            }
+        });
+        console.log(this.#allcoments)
     }
     
 }
@@ -51,3 +63,6 @@ primeiro.newComent('user0','segue os bailes')
 primeiro.deleteComent('user0','segue o baile')
 primeiro.Like('user0','segue os bailes')
 primeiro.editComent('user0','segue os bailes','comentario editado')
+primeiro.showPost()
+primeiro.Like('user0','comentario editado')
+primeiro.desLike('user0','comentario editado')
