@@ -21,6 +21,15 @@ class postagemmae {
         console.log(this.#allcoments)
     }
 
+    editComent(user,old_coment,new_coment) {
+        this.#allcoments.forEach((element,i) => {
+            if(element.usuario == user && element.comentario == old_coment){
+                this.#allcoments[i].comentario = new_coment
+            }
+        });
+        console.log(this.#allcoments)
+    }
+
     Like(user,coment) {
         this.#allcoments.forEach((element) => {
             if(element.usuario == user && element.comentario == coment){
@@ -41,3 +50,4 @@ primeiro.newComent('user0','segue os bailes')
 // console.log('\nAqui comeca o delete')
 primeiro.deleteComent('user0','segue o baile')
 primeiro.Like('user0','segue os bailes')
+primeiro.editComent('user0','segue os bailes','comentario editado')
