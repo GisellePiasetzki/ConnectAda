@@ -73,10 +73,11 @@ li {
     list-style-type: none;
 }
 
-.postContainer {
+.postContainer, .friendsContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100vw;
     border: 0;
     border-bottom: 1px solid #282C33;
     padding: 10px 20px;
@@ -97,19 +98,18 @@ li .avatarIcon img {
     background-color: #A6F750;
 }
 
-.userNameAndPostContainer div {
+.userNameAndPostContainer div, .userNameContainer div {
     margin-bottom: 2px;
     display: flex;
     justify-content: space-between
 }
 
-.userNameAndPostContainer strong,
-p {
+.userNameAndPostContainer strong, p, .userNameContainer strong {
     color: white;
     font-size: 12px;
 }
 
-.userNameAndPostContainer span {
+.userNameAndPostContainer span, .userNameContainer span {
     color: #CED5DC;
     font-size: 12px;
     opacity: 40%;
@@ -160,15 +160,18 @@ footer button{
 
 /* ---------- Página Novo Post --------- */
 
-.btnCancel button {
+.btnCancel button, .btnAddFriends button, .btnDeleteFriends button {
     background: none;
     border: none;
 }
 
-.btnCancel a{
+.btnCancel a, .btnNewPost a, .btnAddFriends a, .btnDeleteFriends a{
     text-decoration:none;
-    color: #898A8D;
+    color: #fff;
     font-size: 12px;
+}
+.btnCancel a{
+    color: #898A8D;
 }
 
 
@@ -181,14 +184,14 @@ footer button{
     justify-content: space-between;
 }
 
-.btnNewPost {
+.btnNewPost, .btnAddFriends {
     background: #2371FF;
     border-radius: 12px;
     font-size: 12px;
     padding: 5px 10px;
 }
 
-.btnNewPost button{
+.btnNewPost button, .btnAddOrRemoveFriends button{
     background: none;
     border: none;
     border-radius: 50%;
@@ -229,6 +232,64 @@ textarea:focus{
 .newPost{
     position: relative;
     top: 80px;
+    width: 100%;
+    margin-right: -100%;
+    padding: 10px 20px;
+}
+
+
+/* ---------- Página Adicionar Novos Amigos --------- */
+
+.txtAddFriends{
+    color: white;
+    font-size: 12px;
+}
+
+.blankSpace{
+    width: 10px;
+    height: 18px;
+}
+
+.nameAndUsername{
+    color: #fff ;
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.bnAddFriends {
+    float: right;
+}
+
+
+.userNameContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;width: 259px;
+}
+
+
+.btnDeleteFriends a{
+    text-decoration:none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.btnDeleteFriends {
+    background: #3e3e3f;
+    border-radius: 12px;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+/* main Página New Friends*/
+.newFriends{
+    position: relative;
+    top: 60px;
     width: 100%;
     margin-right: -100%;
     padding: 10px 20px;
