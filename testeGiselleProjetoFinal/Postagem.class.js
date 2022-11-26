@@ -1,15 +1,41 @@
-const Entidade = require("./Entidade.class.js");
-const {create_UUID} = require ("./utils.js");
+import Entidade from "/Entidade.class";
+import create_UUID from "/utils";
+// const Entidade = require("./Entidade.class.js");
+// const {create_UUID} = require ("./utils.js");
 
 
 
-class Postagem extends Entidade {
+export class Postagem extends Entidade {
     idUsuario;
+    idForm;
+    idTextArea;
+    idLiPost;
 
-    constructor (idUsuario){
+
+    constructor (idUsuario, idForm, idTextArea, idLiPost ){
         super(create_UUID());
-        this.idUsuario = idUsuario;
+        this.idUsuario = document.getElementById (idUsuario);
+        this.form = document.getElementById = (idForm);
+        this.textArea = document.getElementById = (idTextArea);
+        this.liPost = document.getElementById = (idLiPost);
+        this.addSubmit();
     }
+
+
+    onSubmit(fun){
+        this.form.addEventListener('submit',fun)
+    }
+
+    addSubmit(){
+        const handleSubimit = (evento) => {
+            evento.preventDefault();
+            console.log('add evento')
+
+        }
+        this.onSubmit(handleSubimit)
+    }
+
+
 
     apagarComentario(){
 
@@ -24,4 +50,7 @@ class Postagem extends Entidade {
 
 }
 
-module.exports = Postagem;
+
+const postForm = new FormPost('formPost', 'textArea', 'liPost');
+
+//module.exports = Postagem;

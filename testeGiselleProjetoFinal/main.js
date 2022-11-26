@@ -1,5 +1,8 @@
-const Usuario = require("./Usuário.class");
-const Postagem = require("./Postagem.class");
+// const Usuario = require("./Usuário.class");
+// const Postagem = require("./Postagem.class");
+
+import { Usuario } from "./Usuario.class";
+import { Postagem } from "./Postagem.class";
 
 
 //teste

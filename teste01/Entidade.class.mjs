@@ -1,4 +1,4 @@
-export class Entidade {
+export default class Entidade {
     id;
     constructor(id){
         this.id = id;
