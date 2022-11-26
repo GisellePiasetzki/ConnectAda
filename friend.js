@@ -46,6 +46,7 @@ const user7 = new User("User7", "user7@gmail.com", "user_7");
 const user8 = new User("User8", "user8@gmail.com", "user_8");
 const user9 = new User("User9", "user9@gmail.com", "user_9");
 
+console.log(user1.nome)
 
 console.log("Teste Add")
 user0.newFriendship(user1)
