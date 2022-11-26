@@ -14,12 +14,9 @@ export  class Usuario extends Entidade {
         this.senha = senha;
     }
 
-    criarPostagem(){
+    // comentarPostagem(){
 
-    }
-    comentarPostagem(){
-
-    }
+    // }
 }
 
 // .module.exports = Usuario;

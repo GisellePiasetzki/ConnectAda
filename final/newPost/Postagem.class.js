@@ -9,6 +9,8 @@ class idPost extends create_UUID {
         
     }
 }
+
+
 export class Postagem extends Entidade {
     idUsuario;
     idForm;
