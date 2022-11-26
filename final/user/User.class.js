@@ -6,23 +6,23 @@ import { Entities } from "./Entities.class.js";
 export class User extends Entities {
     userName;
     fullName;
-    #password;
+    password;
     email;
 
     constructor(fullName, password, email, userName){
         super(Entities.id);
         this.fullName = fullName;
-        this.#password = password;
+        this.password = password;
         this.email = email;
         this.userName = userName;
     }
 
     get password () {
-        return this.#password;
+        return this.password;
     }
 
     set password (newPassword) {
-        this.#password = newPassword;
+        this.password = newPassword;
     }
 
 
