@@ -1,16 +1,16 @@
-import { MainPost } from "../newPost/Postagem.class";
+// import { MainPost } from "../newPost/Postagem.class";
 
-export const dataPost = [];
+// export const dataPost = [];
 
-function referencia(id,fullName,password,email,userName){
-    const add = {email:email,
+// function referencia(id,fullName,password,email,userName){
+//     const add = {email:email,
                     
-                }
+//                 }
     
-    dataBase.push(add)
-}
+//     dataBase.push(add)
+// }
 
-let user1 = new User ("gabiCeranto", "admin", "admin","gaabiceranto")
+// let user1 = new User ("gabiCeranto", "admin", "admin","gaabiceranto")
 
-referencia(user1.id,user1.fullName,user1.password,user1.email,user1.userName)
+// referencia(user1.id,user1.fullName,user1.password,user1.email,user1.userName)
 

@@ -16,11 +16,11 @@ import { dataBase } from "../dataBase/data.js";
 // }
 
 
- class Post {
-    texto;
+ export class Post {
+    textPost;
 
-    constructor(texto) {
-        this.texto = texto;
+    constructor(textPost) {
+        this.textPost = textPost;
     }
     
 
@@ -110,5 +110,5 @@ function postar(event){
 
 }
 
-const btnPost = document.getElementById('btnPost')
-btnPost.addEventListener("click", function(event){postar(event)});
+// const btnPost = document.getElementById('btnPost')
+// btnPost.addEventListener("click", function(event){postar(event)});
