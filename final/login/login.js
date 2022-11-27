@@ -1,6 +1,10 @@
 import { dataBase } from "../dataBase/data.js";
 
+// export let thisUser = '';
+
 function logar(event){
+
+  
 
   event.preventDefault();
 
@@ -21,17 +25,30 @@ const index = dataBase.findIndex(item => item.email === login)
 
 
   if(dataBase[index].password === password){
-    alert("sucesso");
+      const thisUser = dataBase[index].email;
+      // console.log(thisUser)
+      alert("sucesso");
+      StorageCreator(thisUser)
+
       location.href = "../feed/feed.html";
-      return;
+      
+      return ;
   } else { alert('Usuário ou senha incorretos')
 }
 
+
 };
+
 
 // logar()
 
 
 const buttonLogin = document.getElementById('buttonLogin')
 buttonLogin.addEventListener("click", function(event){logar(event)});
+
+const StorageCreator = (thisUser) => {
+  window.localStorage.setItem('user',JSON.stringify(thisUser) )
+}
+
+
 

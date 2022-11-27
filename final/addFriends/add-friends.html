@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Adicionar Amigos</title>
 </head>
 <body>  
@@ -12,7 +12,7 @@
         <div class="headerContainerNewPost">
             <div class="btnCancel">
                 <button>
-                    <a href="/front-Gabi/feed.html"><img src="/front-Gabi/assets-front/Left-Arrow-Icon.svg" alt=""></a>
+                    <a href="../feed/feed.html"><img src="/front-Gabi/assets-front/Left-Arrow-Icon.svg" alt=""></a>
                 </button>
             </div>      
             <div class="txtAddFriends">
@@ -27,37 +27,16 @@
             <li class="post">
                 <div class="friendsContainer">
                     <div class="avatarIcon">
-                        <img src="/front-Gabi/assets-front/user-profile.svg" alt="">
+                        <img src="../assets-front/user-profile.svg" alt="">
                     </div>
                     <div class="userNameContainer">
                         <div class="nameAndUsername">
                             <strong>Robson Otavio</strong>
                             <span>@robson_otavio</span>
                         </div>
-
                         <div class="btnAddFriends">
-                            <button>
+                            <button id="buttonAdd">
                                 <a href="#">Adicionar</a>
-                            </button>
-                        </div>   
-
-                    </div>
-                </div>
-            </li>
-            <li class="post">
-                <div class="friendsContainer">
-                    <div class="avatarIcon">
-                        <img src="/front-Gabi/assets-front/user-profile.svg" alt="">
-                    </div>
-                    <div class="userNameContainer">
-                        <div class="nameAndUsername">
-                            <strong>Robson Otavio</strong>
-                            <span>@robson_otavio</span>
-                        </div>
-
-                        <div class="btnDeleteFriends">
-                            <button>
-                                <a href="#">Remover</a>
                             </button>
                         </div>   
 
@@ -67,5 +46,8 @@
             
         </ul>
     </main>
+
+    <script type = "module" src="./friends.js"></script>
+    <script src="./addRemoveFriend.js"></script>
 </body>
 </html>

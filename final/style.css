@@ -191,6 +191,11 @@ footer button{
     padding: 5px 10px;
 }
 
+.btnRemoveFriends{
+    background: gray;
+
+}
+
 .btnNewPost button, .btnAddOrRemoveFriends button{
     background: none;
     border: none;
