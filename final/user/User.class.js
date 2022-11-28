@@ -1,9 +1,5 @@
-// const Entidade = require("./Entidade.class.js");
-// const {create_UUID} = require ("./utils.js");
-
 import { Entities } from "./Entities.class.js";
-// import { Post } from "../newPost/newpost.js";
-
+ 
 export  class User extends Entities {
     userName;
     fullName;
@@ -44,22 +40,14 @@ export  class User extends Entities {
     }
 
     deleteFriendship(friend) {
-        // if(this.friends.includes(friend)) { // checa se o user do meu amigo existe na minha lista de amigos
             const myIndex = this.friends.indexOf(friend); //procura o index do meu amigo na MINHA lista
             this.friends.splice(myIndex, 1); // deleta meu amigo na minha lista
-
-        //     // const hisIndex = this.friends.indexOf(friend); 
-        //     // this.friends.splice(hisIndex, 1); // me deleta da lista dele
-        // }
-        // else {
-        //     console.log(`${friend} não está na sua lista de amigos.`) //se ele não for mais meu amigo aparece essa mensagem
-        // }
     }
 
     deletePost(text){
-        const index = this.post.indexOf(text) //procura o index do meu amigo na MINHA lista
+        const index = this.post.indexOf(text) 
         console.log(index)
-        this.post.splice(index, 1); // deleta meu amigo na minha lista
+        this.post.splice(index, 1); 
     }
 
     editPost(old_post,new_post) {
@@ -73,18 +61,4 @@ export  class User extends Entities {
 
 
 
-
 }
-
-// export  class Post {
-//     texto;
-
-//     constructor(texto) {
-//         this.texto = texto;
-//     }
-// }
-
-// const userTeste = new User ("gabiCeranto", "leaoVerde", "gabiceranto@gmail.com","gaabiceranto")
-// console.log(userTeste)
-
-// .module.exports = Usuario;

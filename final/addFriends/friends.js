@@ -1,9 +1,7 @@
 
 import { dataBase } from "../dataBase/data.js";
-// import { btnAddRemoveFriends } from './addRemoveFriend.js'
 
-window.btnAddRemoveFriends = btnAddRemoveFriends;
-
+window.btnAddRemoveFriends = btnAddRemoveFriends; // para funcionar a função OnClick no html
 
 function renderFriends(){
     const ul = document.querySelector("ul") 
@@ -103,7 +101,7 @@ function btnAddRemoveFriends(userEmail){
     }
 
         console.log(user)
-    // document.location.reload(true);
+    
     
 }
 
@@ -113,46 +111,3 @@ function btnAddRemoveFriends(userEmail){
 
 
 renderFriends();
-
-
-
-
-// function postar(event){
-//     event.preventDefault();
-
-//     const postText = document.getElementById("textArea").value;
-    
-//     const usuario = window.localStorage.getItem('user').replaceAll('"','')
-    
-//     // console.log(usuario)
-
-//     // console.log(dataBase)
-//     const index = dataBase.findIndex(item => item.email == usuario)
-
-//     // console.log(index)
-
-//     const newUserPost = new Post (postText)
-
-//     dataBase[index].newPost(newUserPost)
-
-//     console.log(dataBase[index])
-
-//     location.href = "../feed/feed.html";
-    
-//     // onSubmit(fun){
-//     //     this.form.addEventListener('submit',fun)
-//     // }
-
-//     // addSubmit(){
-//     //     const handleSubimit = (evento) => {
-//     //         evento.preventDefault();
-//     //         console.log('add evento')
-
-//     //     }
-//     //     this.onSubmit(handleSubimit)
-//     // }
-
-// }
-
-// const btnPost = document.getElementById('btnPost')
-// btnPost.addEventListener("click", function(event){postar(event)});

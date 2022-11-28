@@ -1,5 +1,5 @@
 import { User } from './User.class.js';
-// import { dataBase } from "../dataBase/data.js";
+
 
 
 export class Admin extends User {
