@@ -18,9 +18,25 @@ import { dataBase } from "../dataBase/data.js";
 
  export class Post {
     textPost;
+    
+
 
     constructor(textPost) {
         this.textPost = textPost;
+        this.comments=[];
+    }
+
+   
+   
+   
+    newComment(comment) {
+        // const add = {usuario:user,comentario:coment,likes:0}
+        this.comments.push(comment)
+    }
+
+    deletComment(comment){
+        const myIndex = this.comments.indexOf(comment); //procura o index do meu amigo na MINHA lista
+            this.comments.splice(myIndex, 1);
     }
     
 

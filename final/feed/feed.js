@@ -88,7 +88,7 @@ function renderFeed() {
                             const divbtnEditAndDeletPost = document.createElement("div");
                             divbtnEditAndDeletPost.classList.add("btnEditAndDeletPost");
                                 const buttonAddRemove = document.createElement("button");
-                                buttonAddRemove.innerHTML = '<img src="/front-Gabi/assets-front/three-dots.svg" alt="">';
+                                // buttonAddRemove.innerHTML = '<img src="/front-Gabi/assets-front/three-dots.svg" alt="">';
                         const divPostContent = document.createElement("div");  
                          divPostContent.classList.add("postContent");
                             const p = document.createElement("p"); 

@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background: #181C23;
+    background-color: #181C23 !important;
     display: block;
     font-family: 'Exo', sans-serif;
 
@@ -61,6 +61,7 @@ header {
     width: 100%;
     margin-right: -100%;
     border-bottom: 1px solid #fff;
+    /* background-color: #181C23; */
 }
 
 ul {

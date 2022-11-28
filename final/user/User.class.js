@@ -56,6 +56,23 @@ export  class User extends Entities {
         // }
     }
 
+    deletePost(text){
+        const index = this.post.indexOf(text) //procura o index do meu amigo na MINHA lista
+        console.log(index)
+        this.post.splice(index, 1); // deleta meu amigo na minha lista
+    }
+
+    editPost(old_post,new_post) {
+        this.post.forEach((element,i) => {
+            if( element == old_post){
+                this.post[i].textPost = new_post
+            }
+        });
+        console.log(this.post)
+    }
+
+
+
 
 }
 

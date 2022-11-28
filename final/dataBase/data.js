@@ -58,17 +58,24 @@ user2.newPost(post21)
 const post30 = new Post("texto0 user 3")
 const post31 = new Post("texto1 user 3")
 const post32 = new Post("texto2 user 3")
+
 admin3.newPost(post30)
 admin3.newPost(post31)
 admin3.newPost(post32)
 
 
 const post60 = new Post("texto0 MEU POST")
+post60.newComment("novo Comentario")
 const post61 = new Post("texto1 MEU POST")
+post61.newComment("novo Comentario 61")
+post61.deletComment("novo Comentario 61")
 const post62 = new Post("texto2 MEU POST")
 user0.newPost(post60)
 user0.newPost(post61)
 user0.newPost(post62)
+user0.deletePost(post62)
+user0.editPost(post61,'este é o novo texto')
+
 
 user0.newFriendship(user1)
 user0.newFriendship(user2)
@@ -81,11 +88,17 @@ user0.newFriendship(user2)
 // user0.deleteFriendship(user1)
 // console.log(dataBase[0])
 
+const UserLocalStorage = window.localStorage.getItem('user').replaceAll('"','')
+// const UserLocalStorage = 'gabriel@gmail.com'
+const index = dataBase.findIndex(item => item.email == UserLocalStorage)
+
+if(dataBase[index].admin){
+dataBase[index].deleteUser(dataBase,'xandesantucci@gmail.com')
+}
 
 
-// dataBase[3].deleteUser(dataBase,'xandesantucci@gmail.com')
+console.log(dataBase);
 
-// console.log(dataBase)
 
 
 
