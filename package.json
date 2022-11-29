@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Trabalho realizado como critério de avaliação do módulo 3 - OiDevs - Front-end",
   "type": "module",
-  "main": "testeGiselleProjetoFinal/Postagem.class.js",
+  "main": "./final/feed/feed.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/final/style.css">
     <title>Novo Post</title>
+    <script type = "module" src="./newpost.js"></script>
 </head>
 <body>
     <header>
@@ -16,7 +17,7 @@
                 </button>
             </div>
             <div class="btnNewPost">
-                <button type="submit" form="formPost" id="btnPost" onclick="postar()">Postar</button>
+                <button type="submit" form="formPost" id="btnPost" onclick="postar();return false">Postar</button>
         </div>
     </header>
     <main class="newPost">
@@ -30,7 +31,7 @@
             </div>
     </main>
 
-    <script type = "module" src="./newpost.js"></script>
+    
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 import { Entities } from "./Entities.class.js";
  
 export  class User extends Entities {
-    userName;
+    userName; //@
     fullName;
     password;
     email;
@@ -27,6 +27,7 @@ export  class User extends Entities {
 
     newPost(post){
         this.post.push(post)
+        // console.log(this.post)
     }
 
     newFriendship(friend) {
@@ -34,9 +35,7 @@ export  class User extends Entities {
             // friend.friends.push(friend); // add eu como amigo dele
             this.friends.push(friend); // add ele como meu amigo
         }
-        else {
-            console.log(`${friend} já é seu amigo.`) //se ele já for meu amigo não add novamente
-        }
+       
     }
 
     deleteFriendship(friend) {
@@ -46,7 +45,7 @@ export  class User extends Entities {
 
     deletePost(text){
         const index = this.post.indexOf(text) 
-        console.log(index)
+        // console.log(index)
         this.post.splice(index, 1); 
     }
 
@@ -56,7 +55,7 @@ export  class User extends Entities {
                 this.post[i].textPost = new_post
             }
         });
-        console.log(this.post)
+        //console.log(this.post)
     }
 
 
